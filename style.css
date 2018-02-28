@@ -5,8 +5,19 @@
  Author:       Glen Somerville
  Author URI:   http://example.com
  Template:     arise
- Version:      1.0.0
+ Version:      1.0.1
  License:			 GNU General Public License version 3.0
  License URI:	 http://www.gnu.org/licenses/gpl-3.0.html
  Text Domain:  arise-child
 */
+
+/* Availability and Booking widget visibility */
+.single-hb_accommodation #secondary .widget:nth-child(n+3) {
+	display: none;
+}
+.single-hb_accommodation.postid-4 #secondary .widget {
+	display: none;
+}
+.single-hb_accommodation.postid-4 #secondary .widget:nth-child(3) {
+	display: block;
+}
